@@ -44,10 +44,10 @@ export default function PrivacyPage() {
 
           <section>
             <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "1.5rem", color: "var(--text-primary)", marginBottom: "0.75rem" }}>
-              3. No Third-Party Tracking or Advertising
+              3. Aggregate Web Analytics &amp; No Commercial Advertising
             </h2>
             <p style={{ color: "var(--text-secondary)", lineHeight: "1.65" }}>
-              We do not run commercial advertising networks, retargeting pixels, social media tracking tags, or data broker integrations. Your pregnancy dates will never be sold, auctioned, or used to serve targeted advertisements.
+              We do not run commercial advertising networks, retargeting pixels, social media tracking tags, or data broker integrations. We use Google Analytics strictly to monitor aggregate, anonymous website traffic (such as page views and general visitor metrics). No personal health data, LMP dates, cycle lengths, or individual calculation inputs are ever sent to analytics or third parties.
             </p>
           </section>
 
