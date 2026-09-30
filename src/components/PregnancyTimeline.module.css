@@ -1,0 +1,168 @@
+.timelineWrapper {
+  margin: 0 auto;
+}
+
+.trimesterBlock {
+  margin-bottom: 4rem;
+}
+
+.trimesterHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid var(--border-light);
+}
+
+@media (min-width: 640px) {
+  .trimesterHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.trimesterTitle {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  color: var(--text-primary);
+  margin-top: 0.35rem;
+}
+
+.trimesterRange {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--accent-terracotta);
+  background: var(--bg-rose);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-pill);
+}
+
+.timelineGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .timelineGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .timelineGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.weekCard {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.25s ease;
+  scroll-margin-top: 90px;
+}
+
+.weekCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(200, 109, 81, 0.4);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.weekNumberBadge {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--accent-terracotta);
+  background: var(--bg-rose);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-pill);
+}
+
+.sizeMetaphorRow {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.sizeIcon {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.sizeTextTitle {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.sizeName {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.devSummary {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.milestonesList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.milestonesList li::before {
+  content: "•";
+  color: var(--accent-terracotta);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+}
+
+.cardFooter {
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8125rem;
+}
+
+.cardFooter a {
+  color: var(--accent-terracotta);
+  font-weight: 600;
+}
+
+.cardFooter a:hover {
+  text-decoration: underline;
+}
+
+.measurementSnippet {
+  color: var(--text-muted);
+}
